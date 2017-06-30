@@ -17,8 +17,6 @@
       color: black;
       font-family: Roboto, helvetica, arial, sans-serif;
       background-color: black;
-      /*background-image: url(backgroundimage.jpeg);*/
-      /*background-image: url("http://7bna.net/images/blur-wallpaper/blur-wallpaper-25.jpg");*/
       background-image: url(http://freedesignfile.com/upload/2017/04/Colorful-watercolor-blurred-background-vector-09.jpg);
       background-size:cover;
     }
@@ -262,9 +260,17 @@
       }
     }
     </style>
+    <script>
+      setInterval(function() {
+        now = new Date();
+        document.getElementById("timedisplay").innerHTML = now.toLocaleTimeString() + "     " + now.toDateString();
+      }, 1000);
+    </script>
   </head>
-  <body>
+  <body >
     <div id="headline">
+      <div id = "timedisplay" style="text-align: center;">
+      </div>
       <div class="container">
         <header>
           <h1>Mobile Web Development</h1>
